@@ -5,7 +5,7 @@ export const Navbar = () => {
   return (
     <div className="navMain">
       <div>
-        <Link to="/">Home</Link>
+        <Link to="/">Albart Jose</Link>
       </div>
       <div>
         <div>
@@ -13,9 +13,6 @@ export const Navbar = () => {
         </div>
         <div>
           <Link to="/about-me">About</Link>
-        </div>
-        <div>
-          <Link to="/contact">Contact</Link>
         </div>
         <div>
           <a
@@ -26,6 +23,11 @@ export const Navbar = () => {
             Blog
           </a>
         </div>
+        {/* <div className="download">
+          <Link to="/files/AlbartJose_Resume.pdf" target="_blank" download>
+            Resume
+          </Link>
+        </div> */}
       </div>
     </div>
   );

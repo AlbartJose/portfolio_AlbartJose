@@ -24,7 +24,17 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div className="homeSkills"></div>
+      <div className="homeSkills">
+        <div>A liitle bit about my self</div>
+        <div>
+          I am a full-stack web developer coming from Kochi, Kerala. I have an
+          unwavering passion and energy for web development and am always open
+          to making new friends.
+        </div>
+        <div>Skilled in</div>
+        <div>JavaScript,HTML,CSS,Node.js,mongoDB,React,express</div>
+        <div>Connect me on - LinkedIn,github,email</div>
+      </div>
     </div>
   );
 };
