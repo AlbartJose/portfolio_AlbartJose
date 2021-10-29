@@ -19,8 +19,13 @@ export const CardLeft = styled.div`
   border-radius: 5px;
   padding: 5px;
   justify-self: center;
-
+  background-color: white;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
+    border: 5px solid #d24d57;
     border-radius: 3px;
     height: auto;
   }

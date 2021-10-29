@@ -1,19 +1,27 @@
 import React from "react";
-import { stackList } from "../../data/ProjectData";
 import Avatar from "@mui/material/Avatar";
-import {
-  Image,
-  Technologies,
-  Tech,
-  TechImg,
-  TechName,
-  ContactWrapper,
-} from "./AboutElements";
+import { Image, ContactWrapper } from "./AboutElements";
 function About() {
   return (
     <ContactWrapper id="about">
       <div className="Container">
-        <div className="SectionTitle">About Me</div>
+        <div className="SectionTitle">
+          <div
+            style={{
+              fontSize: "40px",
+              fontFamily: "'Trebuchet MS', sans-serif",
+            }}
+          >
+            About Me
+          </div>
+          <hr
+            style={{
+              marginLeft: "5px",
+              width: "177px",
+              background: "#d24d57",
+            }}
+          />
+        </div>
         <div className="BigCard">
           <Image>
             <Avatar
@@ -23,20 +31,20 @@ function About() {
             />
           </Image>
           <div className="AboutBio">
-            Hello! My name is <strong>Albart Jose</strong> and I enjoy
-            coding and solving problems. I joined Masai School to develop my skills in Full Stack Development. I have created various end to end website clones with <strong>MERN stack</strong>
+            <div
+              style={{
+                fontSize: "28px",
+                fontFamily: "'Trebuchet MS', sans-serif",
+              }}
+            >
+              Hello! I am Albart Jose
+            </div>
+            who enjoys coding and solving problems.As an aspiring Full Stack Web
+            developer, I like the impact it creates on the world. <br></br>One
+            of my strongest skills is creativity and it helps me a lot in web
+            designs I have created various end to end website clone using{" "}
+            <strong>MERN stack</strong>
           </div>
-          <div className="AboutBio tagline2">
-            The <strong>tech stacks</strong> I use are
-          </div>
-          <Technologies>
-            {stackList.map((stack, index) => (
-              <Tech key={index} className="tech">
-                <TechImg src={stack.img} alt={stack.name} />
-                <TechName>{stack.name}</TechName>
-              </Tech>
-            ))}
-          </Technologies>
         </div>
       </div>
     </ContactWrapper>

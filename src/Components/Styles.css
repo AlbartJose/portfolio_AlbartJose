@@ -17,14 +17,27 @@ a {
   position: fixed;
   background-color: white;
   box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+  z-index: 100;
+}
+
+@media (max-width: 600px) {
+  .navMain {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navMain {
+    font-size: 12px;
+  }
 }
 
 .navMain > div {
   display: flex;
   align-items: center;
+  color: #d24d57;
 }
 .navMain > div > a {
-  color: #d24d57;
   text-decoration: none;
 }
 
@@ -32,9 +45,9 @@ a {
   box-sizing: border-box;
   padding: 0px 10px;
   margin: 0px 5px;
+  color: #d24d57;
 }
 .navMain > div > div > a {
-  color: #d24d57;
   text-decoration: none;
 }
 

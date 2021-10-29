@@ -9,6 +9,7 @@ export const HeroContainer = styled.div`
   margin-left: auto;
   display: flex;
   flex-direction: column;
+  padding-top: 150px;
 
   @media (min-width: 576px) {
     max-width: 540px;
@@ -21,6 +22,9 @@ export const HeroContainer = styled.div`
   }
   @media (min-width: 1200px) {
     max-width: 1000px;
+  }
+  @media (max-width: 600px) {
+    padding-top: 25px;
   }
 `;
 
@@ -43,7 +47,7 @@ export const HeroLeft = styled.div`
 
   h1 {
     font-size: 2.8rem;
-    color: rgb(119, 119, 121);;
+    color: rgb(119, 119, 121);
     opacity: 0.98;
     font-weight: 400;
   }
@@ -57,7 +61,7 @@ export const HeroLeft = styled.div`
 
   p {
     font-size: 17px;
-    color: rgb(119, 119, 121);;
+    color: rgb(119, 119, 121);
     opacity: 0.85;
   }
 
